@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/lat">
+        <ImageView
+            android:id="@+id/image_to_upload"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_add_image"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="Nombres"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtNombres"
+            android:hint="Apellidos"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/txtTelefonoHogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtEmail"
+            android:hint="Teléfono Hogar"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/txtTelefonoPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtTelefonoHogar"
+            android:hint="Teléfono Personal"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/txtTelefonoLaboral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtTelefonoLaboral"
+            android:hint="Teléfono Laboral"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/txtcorreoelectronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtTelefonoLaboral"
+            android:hint="correo electronico"
+            android:textSize="16sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación"
+            android:id="@+id/obtenercoordenadas"/>
+
+        <Button
+            android:id="@+id/subir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Guardar"
+            android:layout_gravity="bottom"
+            android:onClick="logout"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:fabSize="normal"
+            android:src="@drawable/img_back"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
